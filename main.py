@@ -14,7 +14,7 @@ from tensorflow.keras.preprocessing import image
 import os
 
 # ===================== 공통 상수 및 설정 =====================
-API_KEY = 'tgbMzsQEGmoWgdvHRN0ZYB909qPRI37FRu/noUXLib/GFPv+hbKg5N/Xh8Yp9GMm8raRPORtoARA4MzhFQB45g==' # 여기에 API 키를 입력하세요.
+API_KEY = '' # 여기에 API 키를 입력하세요.
 URL = 'http://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty'
 GRADE_MAP = {
     '1': '좋음',
