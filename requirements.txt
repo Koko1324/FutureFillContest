@@ -1,0 +1,12 @@
+pygame
+pymodi
+pymodi-plus
+SpeechRecognition
+numpy
+pandas
+opencv-python
+tensorflow==2.15.0
+matplotlib
+jupyterlab
+pyaudio
+openpyxl
