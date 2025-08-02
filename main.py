@@ -27,9 +27,9 @@ SIDO_LIST = ['서울', '부산', '대구', '인천', '광주', '대전', '울산
              '경기', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '제주']
 SHAKE_THRESHOLD = 20.0
 SAMPLE_INTERVAL = 0.2
-MOTOR_SPEED_POSITIVE = 70
-MOTOR_SPEED_NEGATIVE = -70
-MOTOR_DURATION_OPEN_FULL = 5  # 창문을 활짝 여는 시간
+MOTOR_SPEED_POSITIVE = 30
+MOTOR_SPEED_NEGATIVE = -30
+MOTOR_DURATION_OPEN_FULL = 2.5  # 창문을 활짝 여는 시간
 MOTOR_DURATION_OPEN_HALF = 2.5 # 창문을 절반 여는 시간
 MOTOR_DURATION_CLOSE = 2.5 # 창문을 닫는 시간
 
