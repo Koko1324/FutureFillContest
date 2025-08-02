@@ -281,18 +281,18 @@ class App(tk.Tk):
 
         grade = self.saved_dust_grade
         
-        if grade == '좋음':
+        if grade == '좋음' or '보통':
             if self.motor_lock != "opening_full":
                 print("🚦 미세먼지 좋음 → 창문 활짝 열기 시작...")
                 self.motor_lock = "opening_full"
                 motor.speed = MOTOR_SPEED_NEGATIVE
                 threading.Thread(target=self.stop_motor_after_delay, args=(MOTOR_DURATION_OPEN_FULL,), daemon=True).start()
-        elif grade == '보통':
-            if self.motor_lock != "opening_half":
-                print("🚦 미세먼지 보통 → 창문 조금 열기 시작...")
-                self.motor_lock = "opening_half"
-                motor.speed = MOTOR_SPEED_NEGATIVE
-                threading.Thread(target=self.stop_motor_after_delay, args=(MOTOR_DURATION_OPEN_HALF,), daemon=True).start()
+        # elif grade == '보통':
+        #     if self.motor_lock != "opening_half":
+        #         print("🚦 미세먼지 보통 → 창문 조금 열기 시작...")
+        #         self.motor_lock = "opening_half"
+        #         motor.speed = MOTOR_SPEED_NEGATIVE
+        #         threading.Thread(target=self.stop_motor_after_delay, args=(MOTOR_DURATION_OPEN_HALF,), daemon=True).start()
         elif grade in ['나쁨', '매우나쁨']:
             if self.motor_lock != "closing":
                 print("🚦 미세먼지 나쁨/매우나쁨 → 창문 닫기 시작...")
